@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+
+:root {
+    --main-color: rgb(6,71,64);
+    --mobile-bg: rgba(29, 110, 102, 0.9);
+    --hover-nav: #13E6F3;
+    --nav-text: #fff;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: var(--main-color);
+}
+/* .nav-menu-items {
+    list-style-type: none;
+    display: flex;
+}
+.nav-link > .nav-anchor {
+    color: var(--nav-text);
+    text-decoration: none;
+    padding: 0 0.5rem;
+}
+.nav-link > .nav-anchor > span {
+    margin-left: 3px;
+} */
+
+.menu-bars {
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+    color: var(--nav-text);
+}
+
+.nav-menu {
+    background-color: #060B;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    /* left: -100%; */
+    transition: 1s;
+}
+
+.nav-menu.active {
+    left: 0;
+    transition: 1s;
+}
